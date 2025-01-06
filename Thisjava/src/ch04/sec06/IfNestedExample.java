@@ -16,12 +16,11 @@ public class IfNestedExample {
 				if(score>=85) {
 				else {
 					grade = "B+"
-				}
 				} 
-					
+			}
 				}
 			}
-				
+
 				
 		}
 		
