@@ -43,7 +43,30 @@ public class Account {
 		 * 현재잔액 : 10000
 		 */
 		
+		/* 도서관 관리 시스템의 일부로 BOOK 클래스를 정의하세요.
+		 */
+		Book book1 = new Book("삼국지","나관중","10001" ,10);
+		book1.show();
 		
+		boolean isOk = book.borrowBook();
+		
+		if(isOK) {
+			System.out.println("도서 대출 성공!");
+		} else {
+			System.out.println("도서 대출 실패!");
+		
+		}
+		
+		book1.show();
+		
+		Book book2 = new Book("이것이 자바다","신용권","10002", 0);
+		book2.show();
+		
+		if(book2.borrowBook()) {
+			System.out.println(book2.getTitle() + "도서 대출 성공!");
+		} else {
+			System.out.println(book2.getTitle() + "도서 대출 실패!");
+		}
 	}
 	
 }
